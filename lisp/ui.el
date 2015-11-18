@@ -19,6 +19,7 @@
 (set-face-attribute 'region              nil :background "#FFFFFF"
                                              :foreground "#000000")
 (set-face-attribute 'trailing-whitespace nil :background "#FFA500")
+(toggle-indicate-empty-lines)
 
 (global-hl-line-mode    1)
 (my-global-rainbow-mode 1)

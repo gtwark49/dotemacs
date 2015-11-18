@@ -11,6 +11,7 @@
 
 
 (exec-path-from-shell-initialize)
+(winner-mode 1)
 
 (setq rbenv-modeline-function 'rbenv--modeline-plain)
   (global-rbenv-mode)
