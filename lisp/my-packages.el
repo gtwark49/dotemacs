@@ -18,6 +18,8 @@
     emojify
     exec-path-from-shell
     expand-region
+    fringe-helper
+    git-gutter-fringe
     google-maps
     hl-indent
     ido-vertical-mode

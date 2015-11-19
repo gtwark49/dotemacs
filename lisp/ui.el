@@ -1,6 +1,7 @@
 ;;; ui.el --- UI/UX related customizations
 
 (require 'column-marker)
+(require 'git-gutter-fringe)
 (require 'hl-indent)
 (require 'linum-relative)
 
@@ -21,14 +22,19 @@
 (set-face-attribute 'trailing-whitespace nil :background "#FFA500")
 (toggle-indicate-empty-lines)
 
-(global-hl-line-mode    1)
-(my-global-rainbow-mode 1)
-(nyan-mode              1)
-(show-paren-mode        1)
+(set-face-foreground 'git-gutter-fr:modified "#FFFF00")
+(set-face-foreground 'git-gutter-fr:added    "#00FF00")
+(set-face-foreground 'git-gutter-fr:deleted  "#0000FF")
 
-(blink-cursor-mode     -1)
-(scroll-bar-mode       -1)
-(tool-bar-mode         -1)
+(global-git-gutter-mode        1)
+(global-hl-line-mode           1)
+(my-global-rainbow-mode        1)
+(nyan-mode                     1)
+(show-paren-mode               1)
+
+(blink-cursor-mode            -1)
+(scroll-bar-mode              -1)
+(tool-bar-mode                -1)
 
 (autoload 'csharp-mode "csharp-mode" "Major mode for editing C# code." t)
   (setq auto-mode-list
