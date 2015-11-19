@@ -17,6 +17,7 @@
 
 (set-face-attribute 'column-marker-1     nil :background "#000000")
 (set-face-attribute 'hl-indent-face      nil :background "#444444")
+(set-face-attribute 'linum               nil :foreground "#FFFFFF")
 (set-face-attribute 'region              nil :background "#FFFFFF"
                                              :foreground "#000000")
 (set-face-attribute 'trailing-whitespace nil :background "#FFA500")

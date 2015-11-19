@@ -9,6 +9,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (add-to-list 'load-path (expand-file-name "/usr/local/Cellar/mu/0.9.15/share/emacs/site-lisp/mu4e"))
+(add-to-list 'load-path "~/workspace/pianobar.el/")
 
 (defvar my-load-libs
   '(
@@ -17,6 +18,7 @@
     "ui"
     "nav"
     "keys"
+;    "my-email"
   ))
 
 (dolist (p my-load-libs)
